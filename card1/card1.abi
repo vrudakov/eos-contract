@@ -1,32 +1,31 @@
 {
-   "types": [{
-       "newTypeName": "AccountName",
-       "type": "Name"
-     }
-   ],
-   "structs": [
-   {
-       "name": "message",
-       "fields":
-       {
-         "name": "String"
-         "count": "UInt64"
-       }
-     }
-   ],
-   "actions": [
-   {
-       "action": "start",
-       "type": "message"
-     }
-   ],
-   "tables": [{
-      "table": "message",
-      "type": "message",
-      "indextype": "i64",
+    "types": [{
+        "newTypeName": "AccountName",
+        "type": "Name"
+      }
+    ],
+    "structs": [
+    {
+        "name": "message",
+        "fields":
+        {
+          "name": "String"
+          "count": "UInt64"
+        }
+      }
+    ],
+    "actions": [
+    {
+        "action": "start",
+        "type": "message"
+      }
+    ],
+    "tables": [
+     {"table":"info",
+     "type":"message",
+     "indextype": "i64",
       "keynames" : ["message"],
-      "keytypes" : ["String"]
-    }
-  ]
+      "keytypes" : ["Name"]}
+    ]
 }
 
